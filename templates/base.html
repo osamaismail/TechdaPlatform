@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'head.html' %}
+    <title>
+        {% block title %}Plamb - Big Data & Analytics HTML Template{% endblock title %}
+    </title>
+
+    <body>
+
+        {% block content %}
+        {% endblock content %}
+
+        <!-- Preloader -->
+            <div class="preloader">
+            <div class="loader">
+                <div class="shadow"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+
+        {% include 'navbar.html' %}
+
+
+        {% include 'footer.html' %}
+
+        <!-- Start Go Top Section -->
+            <div class="go-top">
+            <i class="fas fa-chevron-up"></i>
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <!-- End Go Top Section -->
+        {% include 'js.html' %}
+
+    </body>
+</html>
